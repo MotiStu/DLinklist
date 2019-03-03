@@ -13,7 +13,7 @@ DListNode* BuyNode(DataType data)
 	New->_pPre = NULL;
 	return New;
 }
-void DListInit(DListNode** pHead)							// 初始化 
+void DListInit(DListNode** pHead)						// 初始化 
 {
 	assert(pHead);
 	*pHead = BuyNode(0);
