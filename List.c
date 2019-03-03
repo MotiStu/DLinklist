@@ -125,7 +125,7 @@ void DListInsert(DListNode* pos, DataType data)				// 任意位置插入
 
 
 
-void DListErase(DListNode* pos)							// 任意位置删除 
+void DListErase(DListNode* pos)							// 删除任意位置 
 {
 	pos->_pPre->_pNext = pos->_pNext;
 	pos->_pNext->_pPre = pos->_pPre;
@@ -149,7 +149,7 @@ DListNode* DListFind(DListNode* pHead, DataType data)		// 查找值为data的结
 }
 
 
-void DListDestroy(DListNode** pHead)						// 销毁 
+void DListDestroy(DListNode** pHead)						// 销毁链表 
 {
 	assert(pHead);
 	DListNode* del = NULL;
